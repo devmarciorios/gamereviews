@@ -23,23 +23,12 @@ public class Game {
     private String platforms;
     private Double score;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {
-    }
-
-    public Game(String longDescription, String shortDescription, String imgUrl, Double score, String platforms,
-                String genre, Integer year, String title, Long id) {
-        this.longDescription = longDescription;
-        this.shortDescription = shortDescription;
-        this.imgUrl = imgUrl;
-        this.score = score;
-        this.platforms = platforms;
-        this.genre = genre;
-        this.year = year;
-        this.title = title;
-        this.id = id;
     }
 
     @Override
